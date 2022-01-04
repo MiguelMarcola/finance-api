@@ -71,23 +71,61 @@
 <pre>
 <code>
   // Rotas da Aplicação
-  
-  //GET
-  /statement
-  /account
-  /balance
-  /statement/date
 
-  //Post
-  /account
-  /deposit
-  /withdraw
+  // O cpf deve ser passado no Header das requisições para validação dos dados
   
-  //PUT
-  /account
+  // GET
 
-  //DELETE
-  /account
+  //Retorna a conta do cpf do Header
+  http://localhost:3333/account
+
+  //Retorna as transações do cpf do Header
+  http://localhost:3333/statement
+
+  //Retorna o saldo do cpf do Header
+  http://localhost:3333/balance
+
+  //Retorna as transações feitas no dia enviado na Query referentes ao cpf no Header
+  http://localhost:3333/statement/date?date={data}
+
+  // Post
+
+  //Para criar uma conta
+  http://localhost:3333/account
+
+    {
+        "cpf": "11111111",
+        "name": "Teste 1"
+    }
+
+  //Para realizar um depósito na conta referente ao cpf no Header 
+  http://localhost:3333/deposit
+
+    {
+        "description": "transfer test",
+        "amount": 500.00
+    }
+
+
+  //Para realizar uma retirada na conta referente ao cpf no Header 
+  http://localhost:3333/withdraw
+
+    {
+        "amount": 100
+    }
+
+  // PUT
+
+  //Para alterar o nome na conta referente ao cpf no Header 
+  http://localhost:3333/account
+
+    {
+        "name": "New name"
+    }
+
+  // DELETE
+  //Para excluir a conta referente ao cpf no Header
+  http://localhost:3333/account
 
 </code>
 </pre>
