@@ -24,7 +24,7 @@
 	🚧   Concluído 🚀 🚧
 </h4>
 
-### Requisitos
+## 📌 Requisitos
 
 - [X] Deve ser possível criar uma conta
 - [X] Deve ser possível buscar o extrato
@@ -36,7 +36,7 @@
 - [X] Deve ser possível deletar uma conta
 - [X] Deve ser possível retornar o balance
 
-### Regras de negócio
+## 📌 Regras de negócio
 
 - [X] Não deve ser possível cadastrar uma conta com o CPF já existente 
 - [X] Não deve ser possível buscar extrato em uma conta não existente
