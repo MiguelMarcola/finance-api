@@ -47,7 +47,7 @@
 
 ## 🛠 Tecnologias
 
-#### [NodeJS](https://nodejs.org/)  +  [Express](https://expressjs.com/pt-br/))
+#### [NodeJS](https://nodejs.org/)  +  [Express](https://expressjs.com/pt-br/)
 
 ## 🚀 Como executar o projeto
 
